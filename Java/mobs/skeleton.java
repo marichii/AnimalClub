@@ -1,0 +1,1 @@
+//undead, burns in daylight. also has pierce statusfx = ignores DEF

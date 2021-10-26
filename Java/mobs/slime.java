@@ -1,0 +1,1 @@
+//sticky, steals your item
