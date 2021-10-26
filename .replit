@@ -1,2 +1,2 @@
-language = "bash"
-run = ""
+language = "java10"
+run = "pushd Java;javac Main.java; java Main; popd"

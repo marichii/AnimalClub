@@ -1,5 +1,6 @@
 public abstract class mob {
 
+  String
   int HP = 50;
   int ATK = 15;
   int DEF = 10; 
