@@ -1,3 +1,3 @@
 public class zombie extends mob {
-  //zombies burn in daylight, cant swim, but they dont get exhausted
+  //undead, burn in daylight, cant swim, but they arent hindered by heat or cold
 }
