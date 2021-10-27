@@ -8,6 +8,7 @@ public class Main {
   Scanner itemChoice = new Scanner (System.in);
   String gameMode;
   String Character;
+  String characterItem;
 
   System.out.println("Welcome to AnimalClub!");
   System.out.println("Would you like to play? (SAY PLAY TO START)");
@@ -18,10 +19,11 @@ public class Main {
     System.out.println("Choose your character!");
     Character = characterChoice.next();
 
-    System.out.println("Nice choice!");
-    System.out.println("What item do you want to equip? You can only choose one.");
-    System.out.println()
-    Character = itemChoice.next();
+    System.out.println("Nice choice! What item do you want to equip?");
+    System.out.println("You can only choose one.");
+    System.out.println("There is:");
+    System.out.println("Slingshot" + "\t" + "Boat" + "\t" + "Iron Ingot" + "\t" + "Armour");
+    characterItem = itemChoice.next();
   }
   }
 }
