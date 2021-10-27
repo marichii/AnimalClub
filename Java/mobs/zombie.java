@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 public class zombie extends mob {
+=======
+public class zombie implements mob {
+>>>>>>> origin/assignment
  
   public void creatureHP(){
     HP = 25;

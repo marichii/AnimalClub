@@ -22,7 +22,7 @@ public class Main {
     System.out.println("Nice choice! What item do you want to equip?");
     System.out.println("You can only choose one.");
     System.out.println("There is:");
-    System.out.println("Slingshot" + "\t" + "Boat" + "\t" + "Iron Ingot" + "\t" + "Shield");
+    System.out.println("Slingshot" + "\t" + "Helmet" + "\t" + "Iron Ingot" + "\t" + "Shield");
     characterItem = itemChoice.next();
 
   }

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 public class blaze extends mob {
+=======
+public class blaze implements mob {
+>>>>>>> origin/assignment
 //burning DOT, on fire, can float, water hurts them, heat
 public void creatureHP(){
     HP = 35;
