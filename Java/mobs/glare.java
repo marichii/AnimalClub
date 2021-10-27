@@ -1,4 +1,4 @@
-public class glare extends mob {
+public class glare implements mob {
 //when dark = spd + atk boost
   public void creatureHP(){
     HP = 25;

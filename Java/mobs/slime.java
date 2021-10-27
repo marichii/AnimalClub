@@ -1,4 +1,4 @@
-public class slime extends mob {
+public class slime implements mob {
 //sticky, steals your item, high hp, low atk
   public void creatureHP(){
     HP = 35;

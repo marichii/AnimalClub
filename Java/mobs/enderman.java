@@ -1,4 +1,4 @@
-public class enderman extends mob {
+public class enderman implements mob {
   
   public void creatureHP(){
     HP = 30;

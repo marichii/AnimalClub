@@ -1,4 +1,4 @@
-public class golem extends mob {
+public class golem implements mob {
  
  public void creatureHP(){
     HP = 55;
