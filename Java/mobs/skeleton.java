@@ -1,4 +1,5 @@
 public class skeleton implements mob {
+ 
   public void creatureHP(){
     HP = 40;
   }

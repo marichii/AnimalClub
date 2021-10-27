@@ -1,3 +1,18 @@
 public class zombie extends mob {
-  //zombies burn in daylight, cant swim, but they dont get exhausted
+ 
+  public void creatureHP(){
+    HP = 25;
+  }
+  public void creatureATK(){
+    ATK = 10;
+  }
+  public void creatureDEF(){
+    DEF = 8;
+  }
+  public void creatureSPD(){
+    SPD = 6;
+  }
+  public void creatureEnvironment(){
+    
+  }
 }
