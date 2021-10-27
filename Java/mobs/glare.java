@@ -1,1 +1,2 @@
-//when dark, atk boost
+public class glare extends mob {
+//when dark = spd + atk boost
