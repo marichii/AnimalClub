@@ -5,6 +5,7 @@ public class Main {
   public static void main(String[] args) {
   Scanner modeChoice = new Scanner(System.in);
   Scanner characterChoice = new Scanner (System.in);
+  Scanner itemChoice = new Scanner (System.in);
   String gameMode;
   String Character;
 
@@ -16,6 +17,11 @@ public class Main {
   {
     System.out.println("Choose your character!");
     Character = characterChoice.next();
+
+    System.out.println("Nice choice!");
+    System.out.println("What item do you want to equip? You can only choose one.");
+    System.out.println()
+    Character = itemChoice.next();
   }
   }
 }
