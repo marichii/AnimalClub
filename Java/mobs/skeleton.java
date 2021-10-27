@@ -12,7 +12,6 @@ public class skeleton implements mob {
     SPD = 13;
   }
   public void creatureEnvironment(){
-    
   }
 }
 //undead, burns in daylight. also has pierce statusfx = ignores DEF

@@ -1,7 +1,7 @@
-public class helmet implements item {
+public class ingot implements item {
 
-  public void itemDEF(){
-    DEF = 5;
+  public void itemATK(){
+    ATK = 5;
   }
   public void itemSPD(){
     SPD = -5;
