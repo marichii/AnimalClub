@@ -3,7 +3,7 @@ public class skeleton implements mob {
     HP = 40;
   }
   public void creatureATK(){
-    ATK = 7;
+    ATK = 15;
   }
   public void creatureDEF(){
     DEF = 6;
