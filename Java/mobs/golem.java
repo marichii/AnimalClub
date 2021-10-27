@@ -13,7 +13,6 @@ public class golem implements mob {
     SPD = 9;
   }
   public void creatureEnvironment(){
-    
   }
 }
 //high def + high atk, low spd

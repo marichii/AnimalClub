@@ -15,4 +15,3 @@ public class skeleton implements mob {
   public void creatureEnvironment(){
   }
 }
-//undead, burns in daylight. also has pierce statusfx = ignores DEF

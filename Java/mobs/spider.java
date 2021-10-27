@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-public class spider extends mob {
-=======
 public class spider implements mob {
->>>>>>> origin/assignment
-//poison, DOTpublic void creatureHP(){
+
   public void creatureHP(){
     HP = 25;
   }
@@ -17,6 +13,5 @@ public class spider implements mob {
     SPD = 13;
   }
   public void creatureEnvironment(){
-    
   }
 }

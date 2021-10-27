@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-public class glare extends mob {
-=======
 public class glare implements mob {
->>>>>>> origin/assignment
-//when dark = spd + atk boost
+
   public void creatureHP(){
     HP = 25;
   }
@@ -17,6 +13,5 @@ public class glare implements mob {
     SPD = 10;
   }
   public void creatureEnvironment(){
-    
   }
 }

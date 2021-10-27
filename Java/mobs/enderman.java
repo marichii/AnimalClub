@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-public class enderman extends mob {
-=======
 public class enderman implements mob {
->>>>>>> origin/assignment
-  
+ 
   public void creatureHP(){
     HP = 30;
   }
@@ -17,7 +13,5 @@ public class enderman implements mob {
     SPD = 13;
   }
   public void creatureEnvironment(){
-    
   }
-
 }
