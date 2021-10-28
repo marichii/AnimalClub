@@ -1,0 +1,1 @@
+//blaze take damage
