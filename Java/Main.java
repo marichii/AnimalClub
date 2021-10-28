@@ -27,7 +27,6 @@ public class Main {
     System.out.println("There is:");
     System.out.println("Burden" + "\t" + "Helmet" + "\t" + "Ingot" + "\t" + "Shield" + "\t" + "Slingshot");
     characterItem = itemChoice.next();
-
   }
   }
 }

@@ -5,6 +5,4 @@ interface ICombatible {
   public int totalATK();
   public int totalDEF();
   public int totalSPD();
-
-  
 }
