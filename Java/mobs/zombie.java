@@ -1,16 +1,16 @@
-public class zombie extends mob {
+public class zombie extends mob implements ICombatible{
 
-  public void creatureHP(){
-    HP = 25;
+  public int creatureHP(){
+    return 25;
   }
-  public void creatureATK(){
-    ATK = 10;
+  public int creatureATK(){
+    return 10;
   }
-  public void creatureDEF(){
-    DEF = 8;
+  public int creatureDEF(){
+    return 8;
   }
-  public void creatureSPD(){
-    SPD = 6;
+  public int creatureSPD(){
+    return 6;
   }
   public void creatureEnvironment(){ 
   }

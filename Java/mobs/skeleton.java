@@ -1,16 +1,16 @@
-public class skeleton extends mob {
+public class skeleton extends mob implements ICombatible {
  
-  public void creatureHP(){
-    HP = 40;
+  public int creatureHP(){
+    return 40;
   }
-  public void creatureATK(){
-    ATK = 15;
+  public int creatureATK(){
+    return 15;
   }
-  public void creatureDEF(){
-    DEF = 6;
+  public int creatureDEF(){
+    return 6;
   }
-  public void creatureSPD(){
-    SPD = 13;
+  public int creatureSPD(){
+    return 13;
   }
   public void creatureEnvironment(){
   }

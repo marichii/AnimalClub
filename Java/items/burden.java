@@ -1,9 +1,9 @@
-public class burden extends item {
+public class burden extends item implements ICombatible {
 
-  public void itemATK(){
-    ATK = 10;
+  public int itemATK(){
+    return 10;
   }
-  public void itemHP(){
-    HP = -5;
+  public int itemHP(){
+    return -5;
   }    
 }

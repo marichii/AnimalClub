@@ -1,16 +1,16 @@
-public class golem extends mob {
+public class golem extends mob implements ICombatible {
  
- public void creatureHP(){
-    HP = 55;
+  public int creatureHP(){
+    return 55;
   }
-  public void creatureATK(){
-    ATK = 30;
+  public int creatureATK(){
+    return 30;
   }
-  public void creatureDEF(){
-    DEF = 13;
+  public int creatureDEF(){
+    return 13;
   }
-  public void creatureSPD(){
-    SPD = 9;
+  public int creatureSPD(){
+    return 9;
   }
   public void creatureEnvironment(){
   }

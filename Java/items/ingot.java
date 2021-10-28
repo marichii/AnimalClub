@@ -1,9 +1,9 @@
-public class ingot extends item {
+public class ingot extends item implements ICombatible {
 
-  public void itemATK(){
-    ATK = 5;
+  public int itemATK(){
+    return 5;
   }
-  public void itemSPD(){
-    SPD = -5;
+  public int itemSPD(){
+    return -5;
   }    
-}//stops from burning, def+
+}

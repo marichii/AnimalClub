@@ -1,9 +1,9 @@
-public class helmet extends item {
+public class helmet extends item implements ICombatible {
 
-  public void itemDEF(){
-    DEF = 5;
+  public int itemDEF(){
+    return 5;
   }
-  public void itemSPD(){
-    SPD = -5;
+  public int itemSPD(){
+    return -5;
   }    
-}//stops from burning, def+
+}

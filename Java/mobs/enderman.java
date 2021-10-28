@@ -1,16 +1,16 @@
-public class enderman extends mob {
+public class enderman extends mob implements ICombatible {
  
-  public void creatureHP(){
-    HP = 30;
+  public int creatureHP(){
+    return 30;
   }
-  public void creatureATK(){
-    ATK = 12;
+  public int creatureATK(){
+    return 12;
   }
-  public void creatureDEF(){
-    DEF = 8;
+  public int creatureDEF(){
+    return 8;
   }
-  public void creatureSPD(){
-    SPD = 13;
+  public int creatureSPD(){
+    return 13;
   }
   public void creatureEnvironment(){
   }

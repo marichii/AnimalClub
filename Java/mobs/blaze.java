@@ -1,16 +1,16 @@
-public class blaze extends mob {
+public class blaze extends mob implements ICombatible {
 
-public void creatureHP(){
-    HP = 35;
+public int creatureHP(){
+    return 35;
   }
-  public void creatureATK(){
-    ATK = 10;
+public int creatureATK(){
+    return 10;
   }
-  public void creatureDEF(){
-    DEF = 8;
+public int creatureDEF(){
+    return 8;
   }
-  public void creatureSPD(){
-    SPD = 9;
+public int creatureSPD(){
+    return 9;
   }
   public void creatureEnvironment(){
   }

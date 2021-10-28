@@ -1,16 +1,16 @@
-public class glare extends mob {
+public class glare extends mob implements ICombatible {
 
-  public void creatureHP(){
-    HP = 25;
+  public int creatureHP(){
+    return 25;
   }
-  public void creatureATK(){
-    ATK = 13;
+  public int creatureATK(){
+    return 13;
   }
-  public void creatureDEF(){
-    DEF = 9;
+  public int creatureDEF(){
+    return 9;
   }
-  public void creatureSPD(){
-    SPD = 10;
+  public int creatureSPD(){
+    return 10;
   }
   public void creatureEnvironment(){
   }

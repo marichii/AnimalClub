@@ -1,9 +1,9 @@
-public class shield extends item {
+public class shield extends item implements ICombatible {
 
-  public void itemDEF(){
-    DEF = 10;
+  public int itemDEF(){
+    return 10;
   }
-  public void itemSPD(){
-    SPD = -10;
+  public int itemSPD(){
+    return -10;
   }    
-}//stops from burning, def+
+}

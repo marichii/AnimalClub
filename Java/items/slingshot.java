@@ -1,9 +1,9 @@
-public class slingshot extends item {
+public class slingshot extends item implements ICombatible {
 
-  public void itemATK(){
-    ATK = 10;
+  public int itemATK(){
+    return 10;
   }
-  public void itemDEF(){
-    DEF = -10;
+  public int itemDEF(){
+    return -10;
   }    
-}//stops from burning, def+
+}

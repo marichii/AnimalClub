@@ -1,6 +1,6 @@
-public abstract class item {
-  public void itemHP();
-  public void itemATK();
-  public void itemDEF();
-  public void itemSPD();
+public abstract class item implements ICombatible {
+  public abstract int itemHP();
+  public abstract int itemATK();
+  public abstract int itemDEF();
+  public abstract int itemSPD();
 }
