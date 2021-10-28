@@ -1,3 +1,3 @@
-public static void combat{
+public static void combat {
   
 }

@@ -1,4 +1,4 @@
-public class helmet implements item {
+public class helmet extends item {
 
   public void itemDEF(){
     DEF = 5;

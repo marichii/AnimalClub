@@ -1,4 +1,4 @@
-public class slingshot implements item {
+public class slingshot extends item {
 
   public void itemATK(){
     ATK = 10;

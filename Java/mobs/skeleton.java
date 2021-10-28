@@ -1,4 +1,4 @@
-public class skeleton implements mob {
+public class skeleton extends mob {
  
   public void creatureHP(){
     HP = 40;

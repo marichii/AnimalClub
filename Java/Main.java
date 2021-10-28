@@ -17,6 +17,9 @@ public class Main {
   if (gameMode.equalsIgnoreCase("play"))
   {
     System.out.println("Choose your character!");
+    System.out.println("Here are your options:");
+    System.out.println("Blaze" + "\t" + "Enderman" + "\t" + "Glare" + 
+    "\t" + "Golem" + "\t" + "Skeleton" + "\t" + "Slime" + "\t" + "Spider" + "\t" + "Zombie");
     Character = characterChoice.next();
 
     System.out.println("Nice choice! What item do you want to equip?");

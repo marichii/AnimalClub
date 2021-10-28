@@ -1,4 +1,4 @@
-public class slime implements mob {
+public class slime extends mob {
 
   public void creatureHP(){
     HP = 35;

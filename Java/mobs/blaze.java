@@ -1,4 +1,4 @@
-public class blaze implements mob {
+public class blaze extends mob {
 
 public void creatureHP(){
     HP = 35;

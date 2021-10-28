@@ -1,4 +1,4 @@
-public class burden implements item {
+public class burden extends item {
 
   public void itemATK(){
     ATK = 10;

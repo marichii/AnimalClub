@@ -1,4 +1,4 @@
-public class zombie implements mob {
+public class zombie extends mob {
 
   public void creatureHP(){
     HP = 25;

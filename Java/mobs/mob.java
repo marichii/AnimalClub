@@ -1,4 +1,4 @@
-interface mob {
+public abstract class mob {
   public void creatureHP();
   public void creatureATK();
   public void creatureDEF();

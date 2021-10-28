@@ -1,4 +1,4 @@
-public class ingot implements item {
+public class ingot extends item {
 
   public void itemATK(){
     ATK = 5;

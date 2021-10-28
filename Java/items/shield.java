@@ -1,4 +1,4 @@
-public class shield implements item {
+public class shield extends item {
 
   public void itemDEF(){
     DEF = 10;

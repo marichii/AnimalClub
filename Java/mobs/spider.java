@@ -1,4 +1,4 @@
-public class spider implements mob {
+public class spider extends mob {
 
   public void creatureHP(){
     HP = 25;
