@@ -14,4 +14,7 @@ public class blaze extends mob implements ICombatible {
   }
   public void creatureEnvironment(){
   }
+  public String getCreature(){
+    return "blaze";
+  }
 }

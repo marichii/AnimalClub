@@ -1,3 +1,4 @@
+/*
 interface ICombatible { 
 //Takes information from mob.java and item.java, adds it together to get stats 
 
@@ -6,3 +7,4 @@ interface ICombatible {
   public int totalDEF();
   public int totalSPD();
 }
+*/

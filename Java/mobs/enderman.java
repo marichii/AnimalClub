@@ -14,4 +14,7 @@ public class enderman extends mob implements ICombatible {
   }
   public void creatureEnvironment(){
   }
+  public String getCreature(){
+    return "enderman";
+  }
 }

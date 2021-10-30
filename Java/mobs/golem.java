@@ -14,5 +14,8 @@ public class golem extends mob implements ICombatible {
   }
   public void creatureEnvironment(){
   }
+  public String getCreature(){
+    
+  }
 }
 //high def + high atk, low spd

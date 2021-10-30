@@ -14,4 +14,7 @@ public class glare extends mob implements ICombatible {
   }
   public void creatureEnvironment(){
   }
+  public String getCreature(){
+    return "glare";  
+  }
 }
