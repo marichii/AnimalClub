@@ -8,5 +8,5 @@ public class helmet extends item implements ICombatible {
   }
   public String getItem(){
   return "helmet";
-}
+  }
 }

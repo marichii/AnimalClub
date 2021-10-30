@@ -8,5 +8,5 @@ public class burden extends item implements ICombatible {
   }
   public String getItem(){
   return "burden";
-}  
+  }  
 }
