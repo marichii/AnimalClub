@@ -5,5 +5,8 @@ public class slingshot extends item implements ICombatible {
   }
   public int itemDEF(){
     return -10;
-  }    
+  }
+  public String getItem(){
+  return "slingshot";
+}
 }

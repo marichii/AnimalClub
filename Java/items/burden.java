@@ -5,5 +5,8 @@ public class burden extends item implements ICombatible {
   }
   public int itemHP(){
     return -5;
-  }    
+  }
+  public String getItem(){
+  return "burden";
+}  
 }

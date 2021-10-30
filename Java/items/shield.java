@@ -5,5 +5,8 @@ public class shield extends item implements ICombatible {
   }
   public int itemSPD(){
     return -10;
-  }    
+  }
+  public String getItem(){
+  return "shield";
+}
 }

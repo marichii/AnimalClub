@@ -14,4 +14,6 @@ public class slime extends mob implements ICombatible {
   }
   public void creatureEnvironment(){ 
   }
+  public String getCreature(){
+  return "slime";  
 }

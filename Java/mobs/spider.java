@@ -14,4 +14,6 @@ public class spider extends mob implements ICombatible{
   }
   public void creatureEnvironment(){
   }
+  public String getCreature(){
+  return "spider";  
 }

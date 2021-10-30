@@ -5,5 +5,8 @@ public class helmet extends item implements ICombatible {
   }
   public int itemSPD(){
     return -5;
-  }    
+  }
+  public String getItem(){
+  return "helmet";
+}
 }
