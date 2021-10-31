@@ -42,5 +42,4 @@ public class Main {
             Game.game(P, CPU);
         }
     }  
-  
 }
