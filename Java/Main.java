@@ -41,5 +41,6 @@ public class Main {
             player CPU = new player(mobs[random.nextInt(7)], items[random.nextInt(4)]);
             Game.game(P, CPU);
         }
-    }
+    }  
+  
 }
