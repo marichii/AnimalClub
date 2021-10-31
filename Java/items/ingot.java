@@ -1,6 +1,9 @@
 package items;
 public class ingot extends item {
 
+   public ingot (String name) {
+    super(name);
+  }
   public int itemHP(){
     return 0;
   }
@@ -13,7 +16,4 @@ public class ingot extends item {
   public int itemSPD(){
     return -5;
   }
-  public String getItem(){
-  return "ingot";
-} 
 }

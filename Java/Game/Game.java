@@ -11,7 +11,9 @@ public class Game {
     player p2 = new player(getObjMob(p2mob), getObjItem(p2item));
 //to access item, p1.item | to access mob, p1.mob 
 System.out.println(p1.mob.getname());
+System.out.println(p1.item.getname());
 System.out.println(p2.mob.getname());
+System.out.println(p2.item.getname());
     }
 
   public static mob getObjMob(String mob) {
@@ -45,19 +47,19 @@ System.out.println(p2.mob.getname());
 
   public static item getObjItem(String item) {
 
-    item i = new burden();
+    item i = new burden(item);
     switch (item.toUpperCase()) {
       case "HELMET":
-      i = new helmet();
+      i = new helmet(item);
       break;
       case "INGOT":
-      i = new ingot();
+      i = new ingot(item);
       break;
       case "SHIELD":
-      i = new shield();
+      i = new shield(item);
       break;
       case "SLINGSHOT": 
-      i = new slingshot();
+      i = new slingshot(item);
       break;
     }
     return i;

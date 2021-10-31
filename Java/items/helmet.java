@@ -1,6 +1,9 @@
 package items;
 public class helmet extends item {
 
+   public helmet (String name) {
+    super(name);
+  }
   public int itemATK(){
     return 0;
   }
@@ -12,8 +15,5 @@ public class helmet extends item {
   }
   public int itemSPD(){
     return -5;
-  }
-  public String getItem(){
-  return "helmet";
   }
 }

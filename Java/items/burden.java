@@ -1,6 +1,9 @@
 package items;
 public class burden extends item {
 
+   public burden (String name) {
+    super(name);
+  }
   public int itemDEF(){
     return 0;
   }
@@ -13,7 +16,4 @@ public class burden extends item {
   public int itemHP(){
     return -5;
   }
-  public String getItem(){
-  return "burden";
-  }  
 }

@@ -1,6 +1,9 @@
 package items;
 public class shield extends item {
 
+   public shield (String name) {
+    super(name);
+  }
   public int itemATK(){
     return 0;
   }
@@ -13,7 +16,4 @@ public class shield extends item {
   public int itemSPD(){
     return -10;
   }
-  public String getItem(){
-  return "shield";
-}
 }

@@ -17,6 +17,7 @@ public class Main {
         String characterItem;
         String[] mobs = {"zombie", "spider", "slime", "golem", "glare", "enderman", "blaze", "skeletom"};
         String[] items = {"ingot", "helmet", "shield", "slingshot", "burden"};
+        String[] environments = {"desert", "jungle", "swamp", "village"};
         System.out.println("Welcome to AnimalClub!");
         System.out.println("Would you like to play? (SAY PLAY TO START)");
         gameMode = modeChoice.next();
@@ -35,7 +36,8 @@ public class Main {
             System.out.println("Burden" + "\t" + "Helmet" + "\t" + "Ingot" + "\t" + "Shield" + "\t" + "Slingshot");
             characterItem = itemChoice.next();
 
-
+          System.out.println("The environment will be:");
+          System.out.println(environments[random.nextInt(3)]);
             Random random = new Random();
             Game.game(characterItem, Character, items[random.nextInt(4)], mobs[random.nextInt(7)]);
         }
