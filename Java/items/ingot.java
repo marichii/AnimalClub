@@ -1,5 +1,12 @@
-public class ingot extends item implements ICombatible {
+package items;
+public class ingot extends item {
 
+  public int itemHP(){
+    return 0;
+  }
+  public int itemDEF(){
+    return 0;
+  }
   public int itemATK(){
     return 5;
   }

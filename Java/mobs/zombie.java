@@ -1,6 +1,9 @@
 package mobs;
 public class zombie extends mob{
-
+  
+  public zombie (String name) {
+    super(name);
+  }
   public int creatureHP(){
     return 25;
   }
@@ -15,7 +18,4 @@ public class zombie extends mob{
   }
   public void creatureEnvironment(){ 
   }
-  public String getCreature(){
-  return "zombie";  
-}
 }

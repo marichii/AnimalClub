@@ -1,6 +1,13 @@
-public class shield extends item implements ICombatible {
+package items;
+public class shield extends item {
 
-  public int itemDEF(){
+  public int itemATK(){
+    return 0;
+  }
+  public int itemHP(){
+    return 0;
+  }
+    public int itemDEF(){
     return 10;
   }
   public int itemSPD(){

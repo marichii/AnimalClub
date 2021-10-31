@@ -1,16 +1,14 @@
 package user;
-public class player{    
+import mobs.*; 
+import items.*;
+public class player {    
 
-  public  String className;
-  public  String itemName;
-  public player(String className, String itemName){
-    this.className = className;
-    this.itemName = itemName;
-  }
-  public  String getclassName(){
-    return className;
-  }
-  public  String getitemName(){
-    return itemName;
-  }
+  public mob mob;
+  public item item;
+
+public player (mob mob, item item) {
+  this.mob = mob;
+  this.item = item;
+}
+
 }

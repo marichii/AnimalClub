@@ -1,6 +1,10 @@
 package mobs;
 public class enderman extends mob{
  
+   public enderman (String name) {
+    super(name);
+  }
+
   public int creatureHP(){
     return 30;
   }
@@ -14,8 +18,5 @@ public class enderman extends mob{
     return 13;
   }
   public void creatureEnvironment(){
-  }
-  public String getCreature(){
-    return "enderman";
   }
 }

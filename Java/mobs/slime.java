@@ -1,6 +1,9 @@
 package mobs;
 public class slime extends mob{
 
+  public slime (String name) {
+    super(name);
+  }
   public int creatureHP(){
     return 35;
   }
@@ -14,8 +17,5 @@ public class slime extends mob{
     return 9;
   }
   public void creatureEnvironment(){ 
-  }
-  public String getCreature(){
-  return "slime";  
-}
+  } 
 }

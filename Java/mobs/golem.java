@@ -1,6 +1,9 @@
 package mobs;
 public class golem extends mob{
- 
+   
+   public golem (String name) {
+    super(name);
+  }
   public int creatureHP(){
     return 55;
   }
@@ -15,8 +18,6 @@ public class golem extends mob{
   }
   public void creatureEnvironment(){
   }
-  public String getCreature(){
-    return "golem";
-  }
+
 }
 //high def + high atk, low spd

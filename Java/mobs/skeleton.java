@@ -1,6 +1,9 @@
 package mobs;
 public class skeleton extends mob{
- 
+  
+  public skeleton (String name) {
+    super(name);
+  }
   public int creatureHP(){
     return 40;
   }
@@ -15,7 +18,4 @@ public class skeleton extends mob{
   }
   public void creatureEnvironment(){
   }
-  public String getCreature(){
-  return "skeleton";  
-}
 }

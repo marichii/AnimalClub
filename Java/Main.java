@@ -28,7 +28,7 @@ public class Main {
             System.out.println("Blaze" + "\t" + "Enderman" + "\t" + "Glare" +
                     "\t" + "Golem" + "\t" + "Skeleton" + "\t" + "Slime" + "\t" + "Spider" + "\t" + "Zombie");
             Character = characterChoice.next();
-            String name = Character;
+
             System.out.println("Nice choice! What item do you want to equip?");
             System.out.println("You can only choose one.");
             System.out.println("There is:");
@@ -36,10 +36,8 @@ public class Main {
             characterItem = itemChoice.next();
 
 
-            player P = new player(name, characterItem);
             Random random = new Random();
-            player CPU = new player(mobs[random.nextInt(7)], items[random.nextInt(4)]);
-            Game.game(P, CPU);
+            Game.game(characterItem, Character, items[random.nextInt(4)], mobs[random.nextInt(7)]);
         }
     }  
 }

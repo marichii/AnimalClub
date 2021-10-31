@@ -1,6 +1,10 @@
 package mobs;
 public class glare extends mob{
 
+  public glare (String name) {
+    super(name);
+  }
+  
   public int creatureHP(){
     return 25;
   }
@@ -14,8 +18,5 @@ public class glare extends mob{
     return 10;
   }
   public void creatureEnvironment(){
+  }  
   }
-  public String getCreature(){
-    return "glare";  
-  }
-}
