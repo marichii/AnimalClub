@@ -4,7 +4,9 @@ import Game.*;
 import java.util.Random;
 
 public class Main {
-
+  
+  public static player P;
+  public static player CPU;
 
     public static void main(String[] args) {
         Scanner modeChoice = new Scanner(System.in);
