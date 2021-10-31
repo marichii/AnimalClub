@@ -1,4 +1,5 @@
-public class enderman extends mob implements ICombatible {
+package mobs;
+public class enderman extends mob{
  
   public int creatureHP(){
     return 30;

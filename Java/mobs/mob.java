@@ -1,11 +1,10 @@
-package mobs; /*
+package mobs;
 
 public abstract class mob {
-  public abstract void creatureHP();
-  public abstract void creatureATK();
-  public abstract void creatureDEF();
-  public abstract void creatureSPD();
+  public abstract int creatureHP();
+  public abstract int creatureATK();
+  public abstract int creatureDEF();
+  public abstract int creatureSPD();
   public abstract void creatureEnvironment();
   public abstract String getCreature();
 }
-*/

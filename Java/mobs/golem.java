@@ -1,4 +1,5 @@
-public class golem extends mob implements ICombatible {
+package mobs;
+public class golem extends mob{
  
   public int creatureHP(){
     return 55;

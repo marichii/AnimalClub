@@ -1,4 +1,5 @@
-public class blaze extends mob implements ICombatible {
+package mobs;
+public class blaze extends mob{
 
   public int creatureHP(){
     return 35;

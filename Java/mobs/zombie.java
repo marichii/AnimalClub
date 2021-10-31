@@ -1,4 +1,5 @@
-public class zombie extends mob implements ICombatible{
+package mobs;
+public class zombie extends mob{
 
   public int creatureHP(){
     return 25;
@@ -16,4 +17,5 @@ public class zombie extends mob implements ICombatible{
   }
   public String getCreature(){
   return "zombie";  
+}
 }

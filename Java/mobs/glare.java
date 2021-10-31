@@ -1,4 +1,5 @@
-public class glare extends mob implements ICombatible {
+package mobs;
+public class glare extends mob{
 
   public int creatureHP(){
     return 25;

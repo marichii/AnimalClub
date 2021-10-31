@@ -1,4 +1,5 @@
-public class slime extends mob implements ICombatible {
+package mobs;
+public class slime extends mob{
 
   public int creatureHP(){
     return 35;
@@ -16,4 +17,5 @@ public class slime extends mob implements ICombatible {
   }
   public String getCreature(){
   return "slime";  
+}
 }
