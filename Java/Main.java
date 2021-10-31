@@ -15,6 +15,7 @@ public class Main {
   String characterItem;
   String[] mobs = {"zombie", "spider", "slime", "golem", "glare", "enderman", "blaze", "skeletom"};
   String[] items = {"ingot", "helmet", "shield", "slingshot", "burden"};
+  String[] environments = {"desert", "jungle", "swamp", "village"};
   System.out.println("Welcome to AnimalClub!");
   System.out.println("Would you like to play? (SAY PLAY TO START)");
   gameMode = modeChoice.next();
@@ -26,12 +27,17 @@ public class Main {
     System.out.println("Blaze" + "\t" + "Enderman" + "\t" + "Glare" + 
     "\t" + "Golem" + "\t" + "Skeleton" + "\t" + "Slime" + "\t" + "Spider" + "\t" + "Zombie");
     Character = characterChoice.next();
+
     String name = Character; 
     System.out.println("Nice choice! What item do you want to equip?");
     System.out.println("You can only choose one.");
     System.out.println("There is:");
     System.out.println("Burden" + "\t" + "Helmet" + "\t" + "Ingot" + "\t" + "Shield" + "\t" + "Slingshot");
     characterItem = itemChoice.next();
+
+    System.out.println("The environment will be:");
+    System.out.println("Player 1 will be using:");
+    System.out.println("Player 2 will be using:");
     System.out.println(characterItem + name);
     P = new player(name, characterItem);
     Random random = new Random();
