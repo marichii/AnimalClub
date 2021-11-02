@@ -1,12 +1,13 @@
 package Game;
 import mobs.*;
 import items.*; 
+import environments.*;
 import combat.*;
 import user.player;
 
 public class Game {
 
-    public static void game(String p1item, String p1mob, String p2item, String p2mob) {
+    public static void game(String pEnvironment, String p1item, String p1mob, String p2item, String p2mob) {
     player p1 = new player(getObjMob(p1mob), getObjItem(p1item));
     player p2 = new player(getObjMob(p2mob), getObjItem(p2item));
 //to access item, p1.item | to access mob, p1.mob 
@@ -64,5 +65,23 @@ System.out.println(p2.item.getname());
     }
     return i;
 
+  public static item getObjEnvironment(String environment) {
+
+    item e = new desert(environment);
+    switch (item.toUpperCase()) {
+      case "JUNGLE":
+      e = new jungle(environment);
+      break;
+      case "SWAMP":
+      e = new swamp(environment);
+      break;
+      case "VILLAGE":
+      e = new village(environment);
+      break;
+      case "SLINGSHOT":
+      e = new slingshot(environment);
+      break;
+    }
+    return e;
   }
 }

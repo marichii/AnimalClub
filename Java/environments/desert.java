@@ -1,19 +1,38 @@
-package environment;
+package environments;
+import mobs.*;
 public class desert extends environment {
 
-  public int itemDEF(){
+  public desert (String name) {
+  super(name);
+  
+if (name.equals("zombie")) {
+  public int environmentDEF(){
     return 0;
   }
-  public int itemSPD(){
+  public int environmentSPD(){
+    return 5;
+  }
+  public int environmentATK(){
     return 0;
   }
-  public int itemATK(){
-    return 10;
+  public int environmentHP(){
+    return 0;
   }
-  public int itemHP(){
+ }
+
+if (name.equals("slime")) {
+  public int environmentDEF(){
+    return 0;
+  }
+  public int environmentSPD(){
+    return 0;
+  }
+  public int environmentATK(){
+    return 0;
+  }
+  public int environmentHP(){
     return -5;
   }
-  public String getItem(){
-  return "burden";
-  }  
+ }
+}
 }
