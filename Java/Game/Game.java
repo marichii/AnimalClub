@@ -64,7 +64,8 @@ System.out.println(p2.item.getname());
       break;
     }
     return i;
-
+  }
+  
   public static item getObjEnvironment(String environment) {
 
     item e = new desert(environment);

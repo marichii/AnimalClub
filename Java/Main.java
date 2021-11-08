@@ -1,4 +1,4 @@
-                         import java.util.*; //Add CPU or 2P mode
+import java.util.*; //Add CPU or 2P mode
 import user.*;
 import Game.*;
 import java.util.Random;
@@ -38,8 +38,7 @@ public class Main {
 
           System.out.println("The environment will be:");
           Random random = new Random();
-          System.out.println(environments[random.nextInt(3)]);
-          Game.game(characterItem, Character, items[random.nextInt(4)], mobs[random.nextInt(7)]);
+          Game.game(characterItem, Character, items[random.nextInt(4)], mobs[random.nextInt(7)], environments[random.nextInt(3)]);
         }
     }  
 }

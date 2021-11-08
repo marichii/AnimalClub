@@ -10,6 +10,5 @@ public class player {
 public player (mob mob, item item) {
   this.mob = mob;
   this.item = item;
-}
-
+  }
 }
