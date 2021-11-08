@@ -1,4 +1,4 @@
-import java.util.*; //Add CPU or 2P mode
+                         import java.util.*; //Add CPU or 2P mode
 import user.*;
 import Game.*;
 import java.util.Random;
