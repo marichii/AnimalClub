@@ -13,7 +13,5 @@ public class shield extends item {
     public int itemDEF(){
     return 10;
   }
-  public int itemSPD(){
-    return -10;
-  }
+ 
 }

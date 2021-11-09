@@ -8,9 +8,7 @@ public class village extends environment {
   public int environmentDEF(){
     return 0;
   }
-  public int environmentSPD(){
-    return 0;
-  }
+  
   public int environmentATK(){
     return 5;
   }

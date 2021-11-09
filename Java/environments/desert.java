@@ -9,9 +9,7 @@ public class desert extends environment {
   public int environmentDEF(){
     return 0;
   }
-  public int environmentSPD(){
-    return 5;
-  }
+  
   public int environmentATK(){
     return 0;
   }

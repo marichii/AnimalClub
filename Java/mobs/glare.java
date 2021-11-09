@@ -14,9 +14,7 @@ public class glare extends mob{
   public int creatureDEF(){
     return 9;
   }
-  public int creatureSPD(){
-    return 10;
-  }
+
   public void creatureEnvironment(){
   }  
   }

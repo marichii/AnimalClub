@@ -14,9 +14,7 @@ public class enderman extends mob{
   public int creatureDEF(){
     return 8;
   }
-  public int creatureSPD(){
-    return 13;
-  }
+ 
   public void creatureEnvironment(){
   }
 }

@@ -13,7 +13,4 @@ public class ingot extends item {
   public int itemATK(){
     return 5;
   }
-  public int itemSPD(){
-    return -5;
-  }
-}
+ 
