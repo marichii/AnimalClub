@@ -83,4 +83,12 @@ System.out.println(setting.getname());
     }
     return e;
   }
+
+  public static void statDetermine(player P, player 2P, String environment){
+    if (environment.equalsIgnoreCase("desert")){
+      if (P.mob.getname().equalsIgnoreCase("zombie") || P.mob.getname().equalsIgnoreCase("skeleton")){
+        
+      }
+    }
+  }
 }
