@@ -10,11 +10,13 @@ public class Game {
     public static void game(String pEnvironment, String p1item, String p1mob, String p2item, String p2mob) {
     player p1 = new player(getObjMob(p1mob), getObjItem(p1item));
     player p2 = new player(getObjMob(p2mob), getObjItem(p2item));
+    environment setting = getObjEnvironment(pEnvironment); 
 //to access item, p1.item | to access mob, p1.mob 
 System.out.println(p1.mob.getname());
 System.out.println(p1.item.getname());
 System.out.println(p2.mob.getname());
 System.out.println(p2.item.getname());
+System.out.println(setting.getname());
     }
 
   public static mob getObjMob(String mob) {
@@ -64,11 +66,11 @@ System.out.println(p2.item.getname());
       break;
     }
     return i;
+  }
+  public static environment getObjEnvironment(String environment) {
 
-  public static item getObjEnvironment(String environment) {
-
-    item e = new desert(environment);
-    switch (item.toUpperCase()) {
+    environment e = new desert(environment);
+    switch (environment.toUpperCase()) {
       case "JUNGLE":
       e = new jungle(environment);
       break;
@@ -77,9 +79,6 @@ System.out.println(p2.item.getname());
       break;
       case "VILLAGE":
       e = new village(environment);
-      break;
-      case "SLINGSHOT":
-      e = new slingshot(environment);
       break;
     }
     return e;

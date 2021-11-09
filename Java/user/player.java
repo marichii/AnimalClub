@@ -1,6 +1,7 @@
 package user;
 import mobs.*; 
 import items.*;
+import environments.*;
 public class player {    
 
   public mob mob;
