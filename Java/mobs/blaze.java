@@ -1,11 +1,13 @@
 package mobs;
-public class blaze extends mob{
+import Game.*;
 
+public class blaze extends mob{
+//blaze stats
   public blaze (String name) {
     super(name);
   }
   public int creatureHP(){
-    return 35;
+    return 35 + Game.hpBuff;
   }
   public int creatureATK(){
     return 10;
@@ -13,7 +15,7 @@ public class blaze extends mob{
   public int creatureDEF(){
     return 8;
   }
-  
+
   public void creatureEnvironment(){
   }
 }

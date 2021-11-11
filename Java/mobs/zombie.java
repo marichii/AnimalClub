@@ -1,6 +1,8 @@
 package mobs;
+import Game.*;
+
 public class zombie extends mob{
-  
+  //zombie stats
   public zombie (String name) {
     super(name);
   }
@@ -8,14 +10,12 @@ public class zombie extends mob{
     return 25;
   }
   public int creatureATK(){
-    return 10;
+    return 10 + Game.atkBuff ;
   }
   public int creatureDEF(){
     return 8;
   }
-  public int creatureSPD(){
-    return 6;
-  }
+
   public void creatureEnvironment(){ 
   }
 }

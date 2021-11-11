@@ -1,94 +1,80 @@
 package Game;
+
 import mobs.*;
-import items.*; 
-import environments.*;
-import combat.*;
+import items.*;
 import user.player;
+import combat.*;
 
 public class Game {
+    public static int hpBuff = 0;
+    public static int defBuff = 0;
+    public static int atkBuff = 0;
 
-    public static void game(String pEnvironment, String p1item, String p1mob, String p2item, String p2mob) {
-    player p1 = new player(getObjMob(p1mob), getObjItem(p1item));
-    player p2 = new player(getObjMob(p2mob), getObjItem(p2item));
-    environment setting = getObjEnvironment(pEnvironment); 
-//to access item, p1.item | to access mob, p1.mob 
-System.out.println(p1.mob.getname());
-System.out.println(p1.item.getname());
-System.out.println(p2.mob.getname());
-System.out.println(p2.item.getname());
-System.out.println(setting.getname());
+    
+    public static void game(String pEnvironment, String p1item, String p1mob, String p2item, String p2mob) throws ClassNotFoundException, InterruptedException {
+        player p1 = new player(getObjMob(p1mob), getObjItem(p1item));
+        player p2 = new player(getObjMob(p2mob), getObjItem(p2item));
+        StatDeterminer(pEnvironment);
+        System.out.println("Get ready to fight! WOOOOOOOH!");
+
+        //game starts:
+        System.out.println(combat.GeneralCombat(p1, p2));
+
     }
 
-  public static mob getObjMob(String mob) {
-
-    mob b = new blaze(mob);
-    switch (mob.toUpperCase()) {
-      case "SLIME":
-      b = new slime(mob);
-      break;
-      case "GOLEM":
-      b = new golem(mob);
-      break;
-      case "ENDERMAN":
-      b = new enderman(mob);
-      break;
-      case "GLARE": 
-      b = new glare(mob);
-      break;
-      case "SKELETON":
-      b = new skeleton(mob);
-      break;
-      case "SPIDER":
-      b = new spider(mob);
-      break;
-      case "ZOMBIE":
-      b = new zombie(mob);
-      break;
+    public static mob getObjMob(String mob) throws ClassNotFoundException {
+            switch (mob.toUpperCase().strip()) {
+            case "SLIME":
+                return new slime(mob);
+            case "GOLEM":
+                return new golem(mob);
+            case "ENDERMAN":
+                return new enderman(mob);
+            case "GLARE":
+                return new glare(mob);
+            case "SKELETON":
+                return new skeleton(mob);
+            case "SPIDER":
+                return new spider(mob);
+            case "ZOMBIE":
+                return new zombie(mob);
+            case "BLAZE":
+               return new blaze(mob);
+            default:
+                throw new java.lang.ClassNotFoundException();
+        }
     }
-    return b;
-  }
 
-  public static item getObjItem(String item) {
 
-    item i = new burden(item);
-    switch (item.toUpperCase()) {
-      case "HELMET":
-      i = new helmet(item);
-      break;
-      case "INGOT":
-      i = new ingot(item);
-      break;
-      case "SHIELD":
-      i = new shield(item);
-      break;
-      case "SLINGSHOT": 
-      i = new slingshot(item);
-      break;
+    public static item getObjItem(String item) throws ClassNotFoundException {
+
+        switch (item.toUpperCase().strip()) {
+            case "HELMET":
+                return new helmet(item);
+            case "INGOT":
+                return new ingot(item);
+            case "SHIELD":
+                return new shield(item);
+            case "SLINGSHOT":
+                return new slingshot(item);
+            case "BURDEN":
+                return new burden(item);
+            default:
+                throw new java.lang.ClassNotFoundException();
+        }
     }
-    return i;
-  }
-  public static environment getObjEnvironment(String environment) {
 
-    environment e = new desert(environment);
-    switch (environment.toUpperCase()) {
-      case "JUNGLE":
-      e = new jungle(environment);
-      break;
-      case "SWAMP":
-      e = new swamp(environment);
-      break;
-      case "VILLAGE":
-      e = new village(environment);
-      break;
+    public static void StatDeterminer(String environment) {
+        switch (environment.toUpperCase()) {
+            case "SWAMP":
+                hpBuff += 5;
+                break;
+            case "VILLAGE":
+                atkBuff += 5;
+                break;
+            case "DESERT":
+                defBuff += 5;
+                break;
+        }
     }
-    return e;
-  }
-
-  public static void statDetermine(player P, player 2P, String environment){
-    if (environment.equalsIgnoreCase("desert")){
-      if (P.mob.getname().equalsIgnoreCase("zombie") || P.mob.getname().equalsIgnoreCase("skeleton")){
-        
-      }
-    }
-  }
 }

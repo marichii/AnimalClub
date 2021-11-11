@@ -1,12 +1,14 @@
 package mobs;
+import Game.*;
+
 public class spider extends mob{
-  
+  //spider stats
   public spider (String name) {
     super(name);
   }
 
   public int creatureHP(){
-    return 25;
+    return 25 + Game.hpBuff;
   }
   public int creatureATK(){
     return 13;
@@ -14,9 +16,7 @@ public class spider extends mob{
   public int creatureDEF(){
     return 7;
   }
-  public int creatureSPD(){
-    return 13;
-  }
+
   public void creatureEnvironment(){
   }
-  }
+}

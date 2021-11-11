@@ -1,6 +1,8 @@
 package mobs;
-public class glare extends mob{
+import Game.*;
 
+public class glare extends mob{
+//glare stats
   public glare (String name) {
     super(name);
   }
@@ -12,9 +14,9 @@ public class glare extends mob{
     return 13;
   }
   public int creatureDEF(){
-    return 9;
+    return 9 + Game.defBuff;
   }
 
   public void creatureEnvironment(){
   }  
-  }
+}

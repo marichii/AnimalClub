@@ -7,7 +7,6 @@ public class slingshot extends item {
   public int itemHP(){
     return 0;
   }
-  
   public int itemATK(){
     return 10;
   }

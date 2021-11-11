@@ -13,4 +13,4 @@ public class ingot extends item {
   public int itemATK(){
     return 5;
   }
- 
+}

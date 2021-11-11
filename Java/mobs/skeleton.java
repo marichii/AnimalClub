@@ -1,6 +1,8 @@
 package mobs;
+import Game.*;
+
 public class skeleton extends mob{
-  
+  //skeleton stats
   public skeleton (String name) {
     super(name);
   }
@@ -8,14 +10,12 @@ public class skeleton extends mob{
     return 40;
   }
   public int creatureATK(){
-    return 15;
+    return 15 + Game.atkBuff;
   }
   public int creatureDEF(){
     return 6;
   }
-  public int creatureSPD(){
-    return 13;
-  }
+
   public void creatureEnvironment(){
   }
 }

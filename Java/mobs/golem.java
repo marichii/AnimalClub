@@ -1,11 +1,14 @@
 package mobs;
+
+import Game.*;
+
 public class golem extends mob{
-   
+   //golem stats
    public golem (String name) {
     super(name);
   }
   public int creatureHP(){
-    return 55;
+    return 55 + Game.hpBuff;
   }
   public int creatureATK(){
     return 30;
@@ -13,11 +16,8 @@ public class golem extends mob{
   public int creatureDEF(){
     return 13;
   }
-  public int creatureSPD(){
-    return 9;
-  }
+
   public void creatureEnvironment(){
   }
 
 }
-//high def + high atk, low spd
