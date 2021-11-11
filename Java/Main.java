@@ -30,11 +30,7 @@ public class Main {
 
             System.out.println("Choose your character Player 1!");
 
-          /*In this while loop, we check to see if the player chooses a correct mob. While it is possible to choose any mob, as there is no wrong answer,
-          it is possible to choose a mob that's not listed. We must check whether a player has actually chosen a mob. There are multiple ways to do this,
-          but we decided to use a try catch block. A try catch block, as the name implies, try's to do so some code and catches any error if one arises
-          while doing the code.
-          */
+          //In this while loop, we check to see if the player chooses a real mob. 
             while (true) {
                 try {
                     System.out.println("Here are your options:");
@@ -69,7 +65,7 @@ public class Main {
                 }
             }
             System.out.println("Nice choice! What item do you want to equip?");
-            //We are essentially doing the same thing that we did for mobs, but instead, items. To see explanation of how this works, refer to the try catch block above
+            //We are doing the same thing that we did for mobs, but instead, items
             System.out.println("Time to choose your item Player 1!");
             while (true) {
                 try {
@@ -95,16 +91,14 @@ public class Main {
                 }
             }
 
-            envio = environments[random.nextInt(3)]; //Generating a random environment to be chosen from the list, then saving the value into a variable
+            envio = environments[random.nextInt(3)]; //Generates a random environment from the list, then saves the value as a variable
             System.out.println("The environment will be: " + envio);
             System.out.println("Player 1! You chose " + Character + ", with your item being " + characterItem + "!"  );
             System.out.println("Player 2! You chose " + Character2 + ", with your item being " + Character2item + "!"  );
             Thread.sleep(2000);
 
             g.game(envio, characterItem, Character, Character2item, Character2);
-            /*At this point, we now have everything to actually start the game. Hence, we
-            will be moving to the game function, found in "AnimalClub-assignment-2/Java/Game/Game"
-           */
+            //we move to the game function, found in "AnimalClub-assignment-2/Java/Game/Game"
         } else {
             //if for some reason the player doesn't want to play, the terminal will close
             System.out.println("Okay, Bye!");
