@@ -2,10 +2,11 @@ package mobs;
 import Game.*;
 
 public class slime extends mob{
-//slime stats
+  //slime stats
   public slime (String name) {
     super(name);
   }
+  
   public int creatureHP(){
     return 35;
   }
@@ -15,7 +16,4 @@ public class slime extends mob{
   public int creatureDEF(){
     return 8 + Game.defBuff;
   }
-
-  public void creatureEnvironment(){ 
-  } 
 }

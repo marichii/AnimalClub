@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException, InterruptedException { //see while loops below to see explanation of "throws ClassNotFoundException"
-
+        Game g = new Game();
         Random random = new Random(); //Creating an instance of the random class
         Scanner sc = new Scanner(System.in); //creating scanner instance, used for taking user input
         boolean isAlone = true;
@@ -44,12 +44,12 @@ public class Main {
                     if (!isAlone) {
                         System.out.println("Your turn Player 2! Choose your character!");
                         Character2 = sc.nextLine();
-                        Game.getObjMob(Character2);
+                        g.getObjMob(Character2);
                     } else {
                         Character2 = mobs[random.nextInt(7)];
                     }
 
-                    Game.getObjMob(Character);
+                    g.getObjMob(Character);
                   /*The line above is where an error may arise. The function is supposed to return an object of a specific class, however,
                   it will throw an error (specifically "ClassNotFoundException") if no class has been chosen by the end of the function, and will also run line 43.
                   See the "getObjMob" function in "AnimalClub-assignment-2/Java/Game/Game" to see exactly how this is done.
@@ -80,12 +80,12 @@ public class Main {
                     if (!isAlone) {
                         System.out.println("Your turn Player 2! Choose your item!");
                         Character2item = sc.nextLine();
-                        Game.getObjItem(Character2item);
+                        g.getObjItem(Character2item);
                     } else {
                         Character2item = items[random.nextInt(5)];
                     }
 
-                    Game.getObjItem(characterItem);
+                    g.getObjItem(characterItem);
                     break;
                 } catch (ClassNotFoundException e) {
                     System.out.println("Hey! You didn't choose a item! Maybe you spelt it wrong?");
@@ -100,8 +100,11 @@ public class Main {
             System.out.println("Player 1! You chose " + Character + ", with your item being " + characterItem + "!"  );
             System.out.println("Player 2! You chose " + Character2 + ", with your item being " + Character2item + "!"  );
             Thread.sleep(2000);
-            Game.game(envio, characterItem, Character, Character2item, Character2);
-            /*At this point, we now have everything to actually start the game. Hence, we will be moving to the game function, found in "AnimalClub-assignment-2/Java/Game/Game"*/
+
+            g.game(envio, characterItem, Character, Character2item, Character2);
+            /*At this point, we now have everything to actually start the game. Hence, we
+            will be moving to the game function, found in "AnimalClub-assignment-2/Java/Game/Game"
+           */
         } else {
             //if for some reason the player doesn't want to play, the terminal will close
             System.out.println("Okay, Bye!");

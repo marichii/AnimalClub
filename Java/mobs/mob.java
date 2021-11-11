@@ -6,11 +6,10 @@ public abstract class mob {
   public mob (String name) {
     this.name = name;
   }
+  //Health points, attack power, and defense of creatures
   public abstract int creatureHP();
   public abstract int creatureATK();
   public abstract int creatureDEF();
-
-  public abstract void creatureEnvironment();
   
   public String getname() {
     return this.name; 

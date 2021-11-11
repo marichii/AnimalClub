@@ -1,4 +1,5 @@
 package items;
+
 public class slingshot extends item {
 
    public slingshot (String name) {

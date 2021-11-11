@@ -16,7 +16,4 @@ public class spider extends mob{
   public int creatureDEF(){
     return 7;
   }
-
-  public void creatureEnvironment(){
-  }
 }

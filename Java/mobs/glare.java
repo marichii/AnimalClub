@@ -16,7 +16,4 @@ public class glare extends mob{
   public int creatureDEF(){
     return 9 + Game.defBuff;
   }
-
-  public void creatureEnvironment(){
-  }  
 }

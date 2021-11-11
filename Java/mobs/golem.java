@@ -1,5 +1,4 @@
 package mobs;
-
 import Game.*;
 
 public class golem extends mob{
@@ -7,6 +6,7 @@ public class golem extends mob{
    public golem (String name) {
     super(name);
   }
+
   public int creatureHP(){
     return 55 + Game.hpBuff;
   }
@@ -16,8 +16,4 @@ public class golem extends mob{
   public int creatureDEF(){
     return 13;
   }
-
-  public void creatureEnvironment(){
-  }
-
 }
