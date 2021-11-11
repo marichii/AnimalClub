@@ -11,7 +11,6 @@ public class Game implements tools {
     public static int defBuff = 0;
     public static int atkBuff = 0;
 
-
     public void game(String pEnvironment, String p1item, String p1mob, String p2item, String p2mob)  throws ClassNotFoundException, InterruptedException   {
         player p1 = new player(getObjMob(p1mob), getObjItem(p1item));
         player p2 = new player(getObjMob(p2mob), getObjItem(p2item));
@@ -55,12 +54,10 @@ public class Game implements tools {
         php -= p.mob.creatureATK() + p.item.itemATK();
         return php;
     }
-
-
-
-
+    //The function returns a predetermined classobject based on a given input
+    //If no classobject matches the input, a ClassNotFoundException error is thrown
     public mob getObjMob(String mob) throws ClassNotFoundException {
-            switch (mob.toUpperCase().strip()) {
+            switch (mob.toUpperCase().strip()) { 
             case "SLIME":
                 return new slime(mob);
             case "GOLEM":
@@ -81,9 +78,8 @@ public class Game implements tools {
                 throw new java.lang.ClassNotFoundException();
         }
     }
-
-
-
+    //The function returns a predetermined classobject based on a given input
+    //If no classobject matches the input, a ClassNotFoundException error is thrown
     public item getObjItem(String item) throws ClassNotFoundException {
 
         switch (item.toUpperCase().strip()) {
@@ -101,7 +97,7 @@ public class Game implements tools {
                 throw new java.lang.ClassNotFoundException();
         }
     }
-    
+
     public static void StatDeterminer(String environment) {
         switch (environment.toUpperCase()) {
             case "SWAMP":

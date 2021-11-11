@@ -41,6 +41,7 @@ public class Main {
                     System.out.println("Blaze" + "\t" + "Enderman" + "\t" + "Glare" +
                             "\t" + "Golem" + "\t" + "Skeleton" + "\t" + "Slime" + "\t" + "Spider" + "\t" + "Zombie");
                     Character = sc.nextLine(); //Setting character to equal a mob that the player has chosen
+                    g.getObjMob(Character);
                     if (!isAlone) {
                         System.out.println("Your turn Player 2! Choose your character!");
                         Character2 = sc.nextLine();
@@ -49,7 +50,6 @@ public class Main {
                         Character2 = mobs[random.nextInt(7)];
                     }
 
-                    g.getObjMob(Character);
                   /*The line above is where an error may arise. The function is supposed to return an object of a specific class, however,
                   it will throw an error (specifically "ClassNotFoundException") if no class has been chosen by the end of the function, and will also run line 43.
                   See the "getObjMob" function in "AnimalClub-assignment-2/Java/Game/Game" to see exactly how this is done.
@@ -77,6 +77,7 @@ public class Main {
                     System.out.println("There is:");
                     System.out.println("Burden" + "\t" + "Helmet" + "\t" + "Ingot" + "\t" + "Shield" + "\t" + "Slingshot");
                     characterItem = sc.nextLine(); //setting characterItem to equal an item that the player has chosen
+                    g.getObjItem(characterItem);
                     if (!isAlone) {
                         System.out.println("Your turn Player 2! Choose your item!");
                         Character2item = sc.nextLine();
@@ -85,7 +86,6 @@ public class Main {
                         Character2item = items[random.nextInt(5)];
                     }
 
-                    g.getObjItem(characterItem);
                     break;
                 } catch (ClassNotFoundException e) {
                     System.out.println("Hey! You didn't choose a item! Maybe you spelt it wrong?");
